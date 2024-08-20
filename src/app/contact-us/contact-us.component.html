@@ -1,0 +1,58 @@
+<div id="contact">
+    <div class="contactUsCover"></div>
+    <div class="container d-flex justify-content-center align-content-center flex-wrap p-4 ">
+        <div class="title mb-4">
+            <h3 class="text-center">تواصل معنا</h3>
+            <div class="line"></div>
+        </div>
+  
+        <form class="w-100  mx-auto " onSubmit={register.handleSubmit}>
+            <div class="row g-2">
+                <div class="col-lg-6 order-lg-1">
+                    <input
+                        type="text"
+                        placeholder="أدخل اسمك"
+                        class="form-control text-end"
+                        name="name"
+                        id="name"
+                        onChange={register.handleChange}
+                    />
+                </div>
+                <div class="col-lg-6 ">
+                    <input
+                        type="email"
+                        class="form-control text-end order-lg-2"
+                        placeholder="أدخل الايميل"
+                        name="email"
+                        onChange={register.handleChange}
+                    />
+                </div>
+            </div>
+            <div class="my-2">
+                <input
+                    type="text"
+                    class="form-control text-end"
+                    placeholder="الموضوع"
+                    name="subject"
+                    onChange={register.handleChange}
+                />
+            </div>
+            <div>
+                <textarea
+                    name="message"
+                    id="message"
+                    class="form-control text-end"
+                    rows={5}
+                    placeholder="اكتب رسالتك"
+                    onChange={register.handleChange}
+                ></textarea>
+            </div>
+            <div class="text-end my-2">
+                <button class="btn bg-warning text-white " type="submit">
+                    ارسال
+                </button>
+            </div>
+        </form>
+    </div>
+  </div>
+  

@@ -1,0 +1,26 @@
+import { BasisComponent } from './basis/basis.component';
+import { HcmComponent } from './hcm/hcm.component';
+import { PmComponent } from './pm/pm.component';
+import { PpComponent } from './pp/pp.component';
+import { MmComponent } from './mm/mm.component';
+import { SdComponent } from './sd/sd.component';
+import { FicoComponent } from './fico/fico.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AbapComponent } from './abap/abap.component';
+import { ppid } from 'process';
+import { RegisterComponent } from './register/register.component';
+export const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'contact', component: ContactUsComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'fico', component: FicoComponent },
+  { path: 'abap', component: AbapComponent },
+  { path: 'sd', component: SdComponent },
+  { path: 'mm', component: MmComponent },
+  { path: 'pp', component: PpComponent },
+  { path: 'pm', component: PmComponent },
+  { path: 'hcm', component: HcmComponent },
+  { path: 'basis', component: BasisComponent },
+];

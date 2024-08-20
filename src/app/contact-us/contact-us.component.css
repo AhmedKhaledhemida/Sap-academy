@@ -1,0 +1,25 @@
+.contactUsCover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(57, 49, 49, 0.5),
+        rgba(57, 49, 49, 0.5)
+      ),
+      url("../../assets/ContactUs.png");
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+  }
+  #contact .container {
+    margin: 25px auto 25px;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  }
+  #contact .title h3 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    padding-bottom: 25px;
+  }
+  #contact .form {
+    margin-bottom: 40px;
+  }
+  

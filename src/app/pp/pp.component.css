@@ -1,0 +1,36 @@
+#pp .courseCoverImg {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(57, 49, 49, 0.5),
+        rgba(57, 49, 49, 0.5)
+      ),
+      url("../../assets/CourseCover1.png");
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+  }
+  
+  #pp .container {
+    margin-top: 25px;
+  }
+  #pp .courseImg img {
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+  }
+  #pp .courseImg .regBtn {
+    padding: 10px;
+    width: 200px;
+  }
+  
+  @media (max-width: 992px) {
+    #pp .courseImg .regBtn {
+      width: 200;
+      padding: 10px;
+      margin-bottom: 1.5rem;
+    }
+    #pp .nav-tabs li {
+      width: 180px;
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,37 @@
+#register .regCoverImage {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(57, 49, 49, 0.5),
+        rgba(57, 49, 49, 0.5)
+      ),
+      url("../../assets/registerCover.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+    position: relative;
+  }
+  #register .regCoverImage .coverCont {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+  }
+  #register .main .card {
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  #register .main .card .card-header {
+    background-color: #fdff9d;
+  }
+  #register .main .card .card-header h6 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  #register .main .card .card-body h2 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  #register form {
+    direction: rtl;
+    text-align: right;
+  }
+  

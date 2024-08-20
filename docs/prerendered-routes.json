@@ -1,0 +1,15 @@
+{
+  "routes": [
+    "/",
+    "/abap",
+    "/basis",
+    "/contact",
+    "/fico",
+    "/hcm",
+    "/mm",
+    "/pm",
+    "/pp",
+    "/register",
+    "/sd"
+  ]
+}

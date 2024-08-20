@@ -1,0 +1,99 @@
+<div id="register">
+  <div class="hgzCoverImage">
+    <div class="text-end text-white coverCont">
+      <h3>أكاديميه الساب</h3>
+      <p>يسعدنا انضمامكم الينا يرجى تعبئه النموزج التالى حتى نستطع التواصل مع سيادتكم</p>
+    </div>
+  </div>
+  <div class="main my-5 py-5">
+    <div class="container">
+      <div class="card text-center border-0">
+        <div class="card-header">
+          <h6 class="text-center">العملاء الجدد</h6>
+        </div>
+        <div class="card-body">
+          <h2 class="mb-0">اضافه بيانات متدرب جديد</h2>
+          <div class="line"></div>
+          <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="pb-2">
+              <label for="study_program" class="mb-2">البرنامج الدراسي
+                <span class="text-danger fs-6">*</span>
+              </label>
+              <select formControlName="study_program" id="study_program" class="form-control" [class.is-invalid]="registerForm.get('study_program')?.invalid && registerForm.get('study_program')?.touched">
+                <option value="">CHOOSE TRACK</option>
+                <option value="SAP Financial Accounting Course" class="text-uppercase">SAP Financial Accounting Course</option>
+                <option value="SAP CO CONSULTANT TRACK">SAP CO CONSULTANT TRACK</option>
+                <option value="SAP SD CONSULTANT TRACK">SAP SD CONSULTANT TRACK</option>
+                <option value="SAP Materials Management Course" class="text-uppercase">SAP Materials Management Course</option>
+                <option value="SAP PP CONSULTANT TRACK">SAP PP CONSULTANT TRACK</option>
+                <option value="SAP QM CONSULTANT TRACK">SAP QM CONSULTANT TRACK</option>
+                <option value="SAP PM CONSULTANT TRACK">SAP PM CONSULTANT TRACK</option>
+                <option value="SAP Human capital management Course" class="text-uppercase">SAP Human capital management Course</option>
+                <option value="SAP BASIS CONSULTANT TRACK">SAP BASIS CONSULTANT TRACK</option>
+                <option value="SAP ABAP TRACK">SAP ABAP TRACK</option>
+              </select>
+              <div class="text-danger fw-bold my-2" *ngIf="registerForm.get('study_program')?.invalid && registerForm.get('study_program')?.touched">
+                يجب اختيار كورس
+                <span class="text-danger fs-6">*</span>
+              </div>
+            </div>
+
+            <div class="pb-2">
+              <label for="arabicName">الاسم باللغة العربية
+                <span class="text-danger fs-6">*</span>
+              </label>
+              <input type="text" formControlName="arabicName" id="arabicName" class="form-control" [class.is-invalid]="registerForm.get('arabicName')?.invalid && registerForm.get('arabicName')?.touched">
+              <div class="text-danger fw-bold my-2" *ngIf="registerForm.get('arabicName')?.invalid && registerForm.get('arabicName')?.touched">
+                يجب إدخال اسم
+              </div>
+            </div>
+
+            <div class="pb-2">
+              <label for="nationalID">السجل المدني/الإقامة
+                <span class="text-danger fs-6">*</span>
+              </label>
+              <input type="text" formControlName="nationalID" id="nationalID" class="form-control" [class.is-invalid]="registerForm.get('nationalID')?.invalid && registerForm.get('nationalID')?.touched">
+              <div class="text-danger fw-bold my-2" *ngIf="registerForm.get('nationalID')?.invalid && registerForm.get('nationalID')?.touched">
+                يجب إدخال السجل المدني/الإقامة
+              </div>
+            </div>
+
+            <div class="pb-2">
+              <label for="address">العنوان
+                <span class="text-danger fs-6">*</span>
+              </label>
+              <input type="text" formControlName="address" id="address" class="form-control" [class.is-invalid]="registerForm.get('address')?.invalid && registerForm.get('address')?.touched">
+              <div class="text-danger fw-bold my-2" *ngIf="registerForm.get('address')?.invalid && registerForm.get('address')?.touched">
+                يجب إدخال العنوان
+              </div>
+            </div>
+
+            <div class="pb-2">
+              <label for="mobile">رقم الجوال
+                <span class="text-danger fs-6">*</span>
+              </label>
+              <input type="text" formControlName="mobile" id="mobile" class="form-control" [class.is-invalid]="registerForm.get('mobile')?.invalid && registerForm.get('mobile')?.touched">
+              <div class="text-danger fw-bold my-2" *ngIf="registerForm.get('mobile')?.invalid && registerForm.get('mobile')?.touched">
+                يجب إدخال رقم الجوال
+              </div>
+            </div>
+
+            <div class="pb-2">
+              <label for="email">البريد الإلكتروني</label>
+              <input type="email" formControlName="email" id="email" class="form-control" [class.is-invalid]="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+              <div class="text-danger fw-bold my-2" *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+                يجب إدخال بريد إلكتروني صحيح
+              </div>
+            </div>
+
+            <div class="pb-2">
+              <label for="degree">المؤهل الدراسي</label>
+              <input type="text" formControlName="degree" id="degree" class="form-control">
+            </div>
+            <button type="submit" class="btn bg-warning text-white mt-3">اضافه المتدرب</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

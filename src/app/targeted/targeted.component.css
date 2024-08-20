@@ -1,0 +1,22 @@
+#target {
+    direction: rtl;
+  }
+  
+  #target .title {
+    padding-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+  #target .title h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #1f396c;
+  }
+  #target .card-body p {
+    font-size: 18px;
+  }
+  #target .card-body ul li {
+    padding-block: 5px;
+  }
+  

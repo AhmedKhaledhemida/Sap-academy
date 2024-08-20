@@ -1,0 +1,44 @@
+<!-- navbar.component.html -->
+
+<nav [ngClass]="{'navbar': true, 'navbar-expand-lg': true, 'fixed-top': true, 'scrolled': isScrolled, 'mainNavbar': !isScrolled}">
+  <div class="container-fluid mx-3">
+    <a class="navbar-brand" (click)="scrollToSection('homeSlider')" routerLink="/">
+      <img src="../../assets/Logo.png" alt="logo" />
+      <span>أكاديمية الساب</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item ">
+          <a class="nav-link" (click)="scrollToSection('homeSlider')" routerLink="/">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('diploma')" routerLink="/">الدبلومات</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">الدورات</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-black" routerLink="/fico">Financial Accounting and Controlling</a></li>
+            <li><a class="dropdown-item text-black" routerLink="/sd">Sales and Distribution</a></li>
+            <li><a class="dropdown-item text-black" routerLink="/mm">Materials Management</a></li>
+            <li><a class="dropdown-item text-black" routerLink="/pp">Production Planning and Quality Management</a></li>
+            <li><a class="dropdown-item text-black" routerLink="/pm">Plant Maintenance</a></li>
+            <li><a class="dropdown-item text-black" routerLink="/hcm">Human Capital Management</a></li>
+            <li><a class="dropdown-item text-black" routerLink="/abap">Advanced Business Application Programming</a></li>
+            <li><a class="dropdown-item text-black" routerLink="/basis">BASIS</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">تواصل معنا</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
+
+
+
